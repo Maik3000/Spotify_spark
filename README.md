@@ -14,39 +14,51 @@ Este proyecto utiliza Apache Spark para analizar tendencias musicales en Spotify
 ## Datasets
 - https://www.kaggle.com/datasets/yamaerenay/spotify-dataset-19212020-600k-tracks
 
-Este dataset incluye:
+Este dataset contiene información sobre canciones y artistas, ideal para análisis musical y proyectos de recomendación. Está compuesto por dos archivos principales:
 
-tracks.csv: Contiene información sobre más de 600,000 canciones, con características como:
+- **tracks.csv**: Contiene información detallada sobre más de 600,000 canciones.
+- **artists.csv**: Información sobre los artistas que participaron en las canciones.
 
-track_id: Identificador único de la canción
-name: Nombre de la canción
-popularity: Puntuación de popularidad (0-100)
-duration_ms: Duración en milisegundos
-explicit: Si la canción tiene contenido explícito
-artists: Artistas que participaron en la canción
-id_artists: IDs de los artistas
-release_date: Fecha de lanzamiento
-danceability: Qué tan adecuada es la canción para bailar (0.0-1.0)
-energy: Medida de intensidad y actividad (0.0-1.0)
-key: Tonalidad de la canción (0-11)
-loudness: Volumen general en decibelios (dB)
-mode: Modalidad de la canción (mayor o menor)
-speechiness: Presencia de palabras habladas (0.0-1.0)
-acousticness: Medida de si la canción es acústica (0.0-1.0)
-instrumentalness: Predice si una canción no contiene vocales (0.0-1.0)
-liveness: Detecta presencia de audiencia (0.0-1.0)
-valence: Positividad musical de la canción (0.0-1.0)
-tempo: Velocidad o ritmo estimado en BPM
-time_signature: Compás estimado
+## Archivos del Dataset
 
+### tracks.csv
 
-artists.csv: Información sobre los artistas, incluyendo:
+Este archivo incluye más de 600,000 canciones con las siguientes características:
 
-id: ID único del artista
-followers: Número de seguidores
-genres: Géneros asociados con el artista
-name: Nombre del artista
-popularity: Puntuación de popularidad (0-100)
+| Columna         | Descripción                                                    |
+|-----------------|----------------------------------------------------------------|
+| `track_id`      | Identificador único de la canción                              |
+| `name`          | Nombre de la canción                                           |
+| `popularity`    | Puntuación de popularidad de la canción (0-100)                 |
+| `duration_ms`   | Duración de la canción en milisegundos                          |
+| `explicit`      | Si la canción tiene contenido explícito (True/False)            |
+| `artists`       | Artistas que participaron en la canción                         |
+| `id_artists`    | IDs de los artistas                                            |
+| `release_date`  | Fecha de lanzamiento de la canción                              |
+| `danceability`  | Qué tan adecuada es la canción para bailar (0.0-1.0)            |
+| `energy`        | Medida de intensidad y actividad de la canción (0.0-1.0)        |
+| `key`           | Tonalidad de la canción (0-11)                                  |
+| `loudness`      | Volumen general en decibelios (dB)                              |
+| `mode`          | Modalidad de la canción (mayor o menor)                         |
+| `speechiness`   | Presencia de palabras habladas en la canción (0.0-1.0)          |
+| `acousticness`  | Medida de si la canción es acústica (0.0-1.0)                   |
+| `instrumentalness` | Predice si la canción no contiene vocales (0.0-1.0)           |
+| `liveness`      | Detecta presencia de audiencia en la canción (0.0-1.0)         |
+| `valence`       | Positividad musical de la canción (0.0-1.0)                     |
+| `tempo`         | Velocidad o ritmo estimado en BPM                              |
+| `time_signature`| Compás estimado de la canción                                  |
+
+### artists.csv
+
+Este archivo contiene información sobre los artistas, incluyendo:
+
+| Columna        | Descripción                                                   |
+|----------------|---------------------------------------------------------------|
+| `id`           | ID único del artista                                          |
+| `followers`    | Número de seguidores del artista                              |
+| `genres`       | Géneros asociados con el artista                               |
+| `name`         | Nombre del artista                                            |
+| `popularity`   | Puntuación de popularidad del artista (0-100)                  |
 
 ## Metodologia
 
