@@ -1,5 +1,3 @@
-(https://www.google.com/url?sa=i&url=https%3A%2F%2Fnewsroom.spotify.com%2Fmedia-kit%2Flogo-and-brand-assets%2F&psig=AOvVaw0P3FCuOumX8EGWE2asK8sJ&ust=1743227989122000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCPjflr6MrIwDFQAAAAAdAAAAABAh)
-
 # Análisis de Datos Musicales en Spotify con Spark
 
 ## Descripción del Proyecto
